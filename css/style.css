@@ -1,0 +1,347 @@
+
+*{
+    overflow-x: hidden;
+}
+
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.8;
+    background-color: var(--bg1);
+    color:var(--body);
+    
+
+}
+
+
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+a:hover{
+    color: var(--brand);
+}
+.link-more{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+.link-more .icon {
+    transition: all 0.4s ease;
+}
+
+.link-more:hover .icon{
+    transform: translateX(10px);
+}
+
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+/* NAVBAR */
+.navbar{
+background: linear-gradient(to bottom, #393834, rgba(68, 69, 11, 0.2));
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 39px;
+}
+
+
+
+/* HERO */
+
+#hero{
+    background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/cover_1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:right;
+}
+
+/* BTN */
+.btn{
+    padding: 10px 36px;
+    font-family:'Times New Roman', Times, serif;
+    transition: all 0.4s ease;
+    border-radius: 0%;
+
+}
+.btn-brand{
+    background-color: var(--brand);
+}
+
+.btn-brand:hover{
+    color: var(--brand);
+    background-color: transparent;
+    border-color: var(--brand);
+}
+.btn-outline-brand{
+    color: var(--brand);
+    background-color: transparent;
+    border-color: var(--brand);
+}
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+}
+
+
+/* ABOUT */
+#about{
+position: relative;
+}
+
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6{
+color: var(--brand);
+
+}
+
+#about h1{
+margin-top: 16px;
+margin-bottom: 24px;
+}
+
+.signature{
+    width: unset;
+}
+
+/* INTRO */
+.intro{
+    margin-bottom: 60px;
+}
+
+.intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6{
+    color: var(--brand);
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* SERVICES */
+
+#services{
+    background: #021522;
+}
+
+#services .content{
+    padding: 32px;
+}
+
+#services p{
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+.cta-btns{
+margin-top: 60px;
+}
+
+/* SOCIAL ICONS */
+.social-links a{
+    width: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    background-color: var(--bg2);
+    }
+    
+    .social-links a:hover{
+        background-color: var(--brand);
+        color: var(--bg1);
+    }
+
+
+    /* TEAM */
+
+
+.team-member{
+position: relative;
+background-color: var(--bg2);
+}
+
+.team-member .social-links{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+
+.team-member:hover .social-links{ 
+    opacity: 1;
+    top: 30px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* REVIEWS */
+
+#reviews{
+    background-color: var(--bg2);
+}
+
+.review{
+    padding: 32px;
+    background-color: var(--bg1);
+    position: relative;
+}
+.review svg{
+    padding: 10px;
+}
+
+.review .icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--bg1);
+    border-radius: 100px;
+    position: absolute;
+    right: 32px;
+}
+
+
+.review img{
+    width: 60px;
+
+    border-radius: 100px;
+}
+
+/* BOOKING */
+#booking{
+    background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/salon.jpg);
+   background-position: center;
+
+}
+#booking form{
+    background-color: var(--bg1);
+    padding: 32px;
+
+}
+
+#booking form .form-control {
+    color: white;
+    background-color: var(--bg2);
+    border-radius: 0;
+    margin-top:12px;
+    border: 2px solid var(--bg2);
+}
+
+#booking form input {
+    height: 50px;
+}
+
+#booking form .form-control:focus{
+    box-shadow: none;
+    border-left-color: var(--brand);
+}
+
+#booking form .form-control::placeholder{
+    color:rgb(152, 134, 134);
+}
+
+.social-links svg{
+    width: 30px;
+}
+
+/* FOOTER */
+footer p svg{
+    width: 20px;
+}
+
+footer{
+    padding-top:160px ;
+}
+
+footer .social-links{
+    display: flex;
+}
+
+footer .social-links a{
+    margin-right: 8px;
+}
+
+.footer-top{
+    padding-bottom: 30px;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--bg2);
+}
+
+@media (max-width:767px) {
+    .signature{
+        width: 370px;
+        margin-left: 40px;
+    }
+
+    #booking{
+        background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/salon.jpg);
+       background-position: center;
+       background-size: cover;
+    
+    }
+
+    
+}
