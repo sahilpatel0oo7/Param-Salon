@@ -1,1 +1,1 @@
-# Param-Salon
+# ParamSalon
