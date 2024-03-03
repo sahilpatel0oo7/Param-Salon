@@ -1,5 +1,4 @@
-
-*{
+* {
     overflow-x: hidden;
 }
 
@@ -12,36 +11,43 @@
 
 }
 
-body{
+body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 1.8;
     background-color: var(--bg1);
-    color:var(--body);
-    
+    color: var(--body);
+
 
 }
 
 
 
-p{
+p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family:'Times New Roman', Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 
-a{
+a {
     color: var(--body);
     text-decoration: none;
     transition: all 0.4s ease;
     cursor: pointer;
 }
-a:hover{
+
+a:hover {
     color: var(--brand);
 }
-.link-more{
+
+.link-more {
     display: inline-flex;
     align-items: center;
     font-size: 13px;
@@ -54,29 +60,30 @@ a:hover{
     transition: all 0.4s ease;
 }
 
-.link-more:hover .icon{
+.link-more:hover .icon {
     transform: translateX(10px);
 }
 
 
-img{
+img {
     width: 100%;
 }
 
-section{
+section {
     padding-top: 160px;
     padding-bottom: 160px;
 }
+
 /* NAVBAR */
-.navbar{
-background: linear-gradient(to bottom, #393834, rgba(68, 69, 11, 0.2));
+.navbar {
+    background: linear-gradient(to bottom, #393834, rgba(68, 69, 11, 0.2));
 }
 
 .navbar .navbar-nav .nav-link.active {
     color: var(--brand);
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Times New Roman', Times, serif;
     font-size: 39px;
 }
@@ -85,46 +92,49 @@ background: linear-gradient(to bottom, #393834, rgba(68, 69, 11, 0.2));
 
 /* HERO */
 
-#hero{
-    background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/cover_1.jpg);
+#hero {
+    background: linear-gradient(to right, #36322d, rgba(27, 31, 52, 0.0)), url(../img/cover_1.jpg);
     height: 100vh;
     background-size: cover;
-    background-position:right;
+    background-position: right;
 }
 
 /* BTN */
-.btn{
+.btn {
     padding: 10px 36px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     transition: all 0.4s ease;
     border-radius: 0%;
 
 }
-.btn-brand{
+
+.btn-brand {
     background-color: var(--brand);
 }
 
-.btn-brand:hover{
+.btn-brand:hover {
     color: var(--brand);
     background-color: transparent;
     border-color: var(--brand);
 }
-.btn-outline-brand{
+
+.btn-outline-brand {
     color: var(--brand);
     background-color: transparent;
     border-color: var(--brand);
 }
-.btn-outline-brand:hover{
+
+.btn-outline-brand:hover {
     background-color: var(--brand);
 }
 
 
 /* ABOUT */
-#about{
-position: relative;
+#about {
+    position: relative;
 }
 
-#about::after{
+#about::after {
     content: "";
     width: 25%;
     height: 100%;
@@ -135,60 +145,60 @@ position: relative;
     z-index: -1;
 }
 
-#about h6{
-color: var(--brand);
+#about h6 {
+    color: var(--brand);
 
 }
 
-#about h1{
-margin-top: 16px;
-margin-bottom: 24px;
+#about h1 {
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
-.signature{
+.signature {
     width: unset;
 }
 
 /* INTRO */
-.intro{
+.intro {
     margin-bottom: 60px;
 }
 
-.intro h1{
+.intro h1 {
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
-.intro h6{
+.intro h6 {
     color: var(--brand);
 }
 
-.intro p{
+.intro p {
     max-width: 500px;
     margin: auto;
 }
 
 /* SERVICES */
 
-#services{
+#services {
     background: #021522;
 }
 
-#services .content{
+#services .content {
     padding: 32px;
 }
 
-#services p{
+#services p {
     margin-top: 24px;
     margin-bottom: 18px;
 }
 
-.cta-btns{
-margin-top: 60px;
+.cta-btns {
+    margin-top: 60px;
 }
 
 /* SOCIAL ICONS */
-.social-links a{
+.social-links a {
     width: 50px;
     height: 60px;
     display: flex;
@@ -196,23 +206,23 @@ margin-top: 60px;
     justify-content: center;
     color: gray;
     background-color: var(--bg2);
-    }
-    
-    .social-links a:hover{
-        background-color: var(--brand);
-        color: var(--bg1);
-    }
-
-
-    /* TEAM */
-
-
-.team-member{
-position: relative;
-background-color: var(--bg2);
 }
 
-.team-member .social-links{
+.social-links a:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+
+/* TEAM */
+
+
+.team-member {
+    position: relative;
+    background-color: var(--bg2);
+}
+
+.team-member .social-links {
     position: absolute;
     top: 0;
     right: 30px;
@@ -221,32 +231,34 @@ background-color: var(--bg2);
 }
 
 
-.team-member:hover .social-links{ 
+.team-member:hover .social-links {
     opacity: 1;
     top: 30px;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
 /* REVIEWS */
 
-#reviews{
+#reviews {
     background-color: var(--bg2);
+    height: 100vh;
 }
 
-.review{
+.review {
     padding: 32px;
     background-color: var(--bg1);
     position: relative;
 }
-.review svg{
+
+.review svg {
     padding: 10px;
 }
 
-.review .icon{
+.review .icon {
     width: 42px;
     height: 42px;
     display: flex;
@@ -260,19 +272,20 @@ background-color: var(--bg2);
 }
 
 
-.review img{
+.review img {
     width: 60px;
 
     border-radius: 100px;
 }
 
 /* BOOKING */
-#booking{
-    background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/salon.jpg);
-   background-position: center;
+#booking {
+    background: linear-gradient(to right, #36322d, rgba(27, 31, 52, 0.0)), url(../img/salon.jpg);
+    background-position: center;
 
 }
-#booking form{
+
+#booking form {
     background-color: var(--bg1);
     padding: 32px;
 
@@ -282,7 +295,7 @@ background-color: var(--bg2);
     color: white;
     background-color: var(--bg2);
     border-radius: 0;
-    margin-top:12px;
+    margin-top: 12px;
     border: 2px solid var(--bg2);
 }
 
@@ -290,58 +303,273 @@ background-color: var(--bg2);
     height: 50px;
 }
 
-#booking form .form-control:focus{
+#booking form .form-control:focus {
     box-shadow: none;
     border-left-color: var(--brand);
 }
 
-#booking form .form-control::placeholder{
-    color:rgb(152, 134, 134);
+#booking form .form-control::placeholder {
+    color: rgb(152, 134, 134);
 }
 
-.social-links svg{
+.social-links svg {
     width: 30px;
 }
 
 /* FOOTER */
-footer p svg{
+footer p svg {
     width: 20px;
 }
 
-footer{
-    padding-top:160px ;
+footer {
+    padding-top: 160px;
 }
 
-footer .social-links{
+footer .social-links {
     display: flex;
 }
 
-footer .social-links a{
+footer .social-links a {
     margin-right: 8px;
 }
 
-.footer-top{
+.footer-top {
     padding-bottom: 30px;
 }
 
-.footer-bottom{
+.footer-bottom {
     padding-top: 30px;
     padding-bottom: 30px;
     border-top: 1px solid var(--bg2);
 }
 
-@media (max-width:767px) {
-    .signature{
+.booking-p {
+    display: none;
+}
+
+#reviews input{
+    border-radius: 5px;
+ }
+ #reviews button{
+    border-radius: 8px;
+    background-color:#959DCC ;
+ }
+
+@media (max-width:600px) {
+    .signature {
         width: 370px;
         margin-left: 40px;
     }
 
-    #booking{
-        background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/salon.jpg);
-       background-position: center;
-       background-size: cover;
-    
+    .navbar a{
+        font-size: 20px;
     }
 
-    
+    /* HERO */
+    #hero {
+        padding: 90px 0;
+        background: linear-gradient(to right, #36322d, rgba(27, 31, 52, 0.0)), url(../img/cover_1.jpg);
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    #hero h1 {
+        font-size: 20px;
+    }
+
+    #hero p {
+        font-size: 9px;
+       
+    }
+
+
+    /* ABOUT */
+
+#about{
+    background-color: var(--bg1);
+    padding: 40px 12px;
+}
+
+    #about .container{
+        background: linear-gradient(to right, #36322d, rgba(27, 31, 52, 0.0)), url(../img/Owner.jpeg);
+        background-position: center;
+        background-size:cover;
+        height: 80vh;
+    }
+
+    #about .img-box {
+        display: none;
+    }
+    #about .row {
+        height: 100%;
+    }
+    #about p{
+        margin-top: 300px;
+        font-size: 10px;
+        color: var(--brand);
+    }
+
+    #about img {
+        margin-left: 30px;
+        width: auto;
+        height: 50px;
+        
+    }
+
+    .team-member{
+        margin-bottom: 20px;
+        margin: 10%;
+        padding: 0;
+    }
+    #team .flex-column{
+padding: 0;
+    }
+
+    /* #about h1 {
+        font-size: 20px;
+    }
+
+    #about p {
+        font-size: 10px;
+    } */
+
+
+    /* SERVICES */
+#services{
+padding: 20px 0;
+}
+
+
+/* #services p{
+    font-size: 10px;
+} */
+#services img{
+    width: 80vw;
+}
+
+#services p{
+    display: none;
+}
+
+#services .services-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services h3{
+    font-size: 10px;
+}
+
+#services .provide{
+    margin: 0;
+}
+
+
+    /* BOOKING */
+
+    #booking {
+        
+        padding: 100px 0;
+        height: 100vh;
+        background: none;
+        background-position: center;
+        background-size: cover; }
+
+        
+
+        #booking form{
+            padding: 60px;
+        }
+
+    #booking p {
+        display: none; }
+
+    #booking .booking-p {
+        display: block; }
+
+
+
+    #reviews {
+        padding: 40px;
+        height: 70vh;
+ }
+ 
+ #reviews h1{
+    margin: 0;
+ }
+ #reviews label{
+font-size: 14px;
+ }
+.card-body h5{
+    margin: 0;
+}
+
+    #booking form {
+        height: 100%;
+        background: linear-gradient(to right, #36322d, rgba(27, 31, 52, 0.0)), url(../img/gabriella-clare-marino-kbhff9Wu21k-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 0;
+    }
+    .card-body h5{
+        font-size: 16px;
+    }
+    .card-body p{
+        font-size: 12px;
+    }
+#booking .container{
+    margin-top: 0;
+    padding: 0;
+}
+#booking .row{
+    margin-top: 0;
+}
+#booking h1{
+    font-size: 20px;
+    margin: 0;
+}
+#booking p{
+    font-size: 13px;
+    color: burlywood;
+}
+#team p{
+    font-size: 13px;
+}
+#booking input{
+    margin: 0;
+    font-size: 12px;
+    border-radius: 5px;
+   
+}
+#booking .btn{
+    font-size: small;
+    padding: 12px;
+}
+#booking input{
+    height: 10px;
+}
+footer{
+    padding: 50px 10px;
+    background-color: var(--bg2);
+}
+footer p{
+    font-size: 10px;
+}
+footer h3,h4{
+    font-size: 18px;
+}
+footer div{
+    margin: 20px 0;
+}
+
+
+
+
+
+    /* FOOTER */
+   
+
 }
